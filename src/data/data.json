@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "titulo":"Sacramento Kings",
+        "description": "Camiseta de los Kings",
+        "categoria": "Camisetas",
+        "imagen":"/public/king.png",
+        "precio":2000,
+        "stock":4
+    },
+    {
+        "id":2,
+        "titulo":"Zapatillas Bulls",
+        "description": "Zapatillas de los Chicago Bulls",
+        "categoria": "Zapatillas",
+        "imagen":"/public/bullszapa.jpg",
+        "precio":4000,
+        "stock":4
+    },
+    {
+        "id":3,
+        "titulo":"Short GS",
+        "description": "Pantalon de GS",
+        "categoria": "Shorts",
+        "imagen":"/public/warriowsshort.jpg",
+        "precio":1800,
+        "stock":4
+    }
+]

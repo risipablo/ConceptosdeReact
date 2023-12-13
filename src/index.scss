@@ -1,0 +1,132 @@
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(216, 218, 217);
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px ;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+.producto{
+    justify-content: center;
+    border: 2px solid black;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.detalle{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 15px ;
+    h4{
+        font-size: 1.6rem;
+    }
+}
+
+
+// detalle del producto
+.container{
+    display: flex;
+    justify-content: center;
+
+    img{
+        border-radius: 20px;
+    }
+}
+
+
+//navbar
+/* Estilos base */
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  nav {
+    /* Estilos para la barra de navegación si los hay */
+  }
+  
+  .overlay {
+    /* Estilos para el overlay si los hay */
+  }
+  
+  .burger {
+    display: none; /* Ocultar el botón del menú en pantallas grandes */
+  }
+  
+  aside {
+    /* Estilos para la barra lateral si los hay */
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  /* Media query para pantallas más pequeñas */
+  @media screen and (max-width: 768px) {
+    .burger {
+      display: block; /* Mostrar el botón del menú en pantallas pequeñas */
+    }
+  
+    nav {
+      display: none; /* Ocultar la barra de navegación en pantallas pequeñas */
+    }
+  
+    .menu {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #fff; /* Cambia el color de fondo si es necesario */
+      padding: 50px; /* Ajusta el espaciado según tus necesidades */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+      display: none;
+    }
+  
+    .menu.open {
+      display: flex;
+    }
+  
+    .menu-link {
+      /* Estilos adicionales para los enlaces en el menú desplegable */
+    }
+  
+    .burger i {
+      font-size: 24px;
+    }
+  }
+  
